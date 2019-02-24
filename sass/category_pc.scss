@@ -1,0 +1,62 @@
+@import "compass/css3";
+.container{
+  width: 1200px; margin: 0 auto;
+  .ayi-c-list-title{
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-left: 4px solid #5079b7;
+    padding-left: 4px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .ayi-c-list{
+    letter-spacing: -.8em;    background-color: #fff;
+    .ayi-c-list-item{
+      letter-spacing: 0;
+      width: 50%;
+      @include box-sizing(border-box);
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 40px;
+      padding: 20px;
+      line-height: 1.8;
+      .ayi-c-item-image{
+        height: 170px;
+        img{
+          @include border-radius(5px);
+        }
+      }
+    }
+    .title{
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px;
+      a{ color: #666;}
+    }
+    .des,.meta{
+      font-size: 14px;
+      color: #a5aab0;
+      margin-bottom: 10px;
+    }
+    .meta{
+      .ayi-right{
+        float: right;
+        a{
+          color: #5079b7;
+          fill: #5079b7;
+        }
+      }
+    }
+    .list{
+      border: 1px dashed #ddd;
+      font-size: 14px;
+      padding: 10px 15px;
+      .list-item a{
+        color: #666;
+      }
+      .list-item:hover a{
+        color: #5079b7;
+      }
+    }
+  }
+}
