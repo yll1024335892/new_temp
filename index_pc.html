@@ -6,7 +6,8 @@
     <link href="css/common.css" rel="stylesheet" type="text/css"/>
     <link href="css/index_pc.css" rel="stylesheet" type="text/css"/>
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-
+    <script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.bxslider.js"></script>
 </head>
 <body>
 <div class="ayi-contain">
@@ -20,41 +21,37 @@
             <div class="ayi-c-top-c u-floatLeft">
                 <nav class="header-nav">
                     <ul class="ayi-subnav-ul">
-                        <li id="menu-item-155938" class="menu-item"><a href="http://www.woshipm.com/">首页</a></li>
-                        <li id="menu-item-155939" class="menu-item"><a href="#">分类浏览</a><span
+                        <li class="menu-item"><a href="http://www.woshipm.com/">首页</a></li>
+                        <li class="menu-item"><a href="#">分类浏览</a><span
                                 class="fa fa-angle-down"></span>
                             <ul class="sub-menu">
-                                <li id="menu-item-155928"
-                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-155928">
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-155928">
                                     <a href="http://www.woshipm.com/category/pmd">产品经理</a></li>
-                                <li id="menu-item-155929" class="menu-item"><a
+                                <li class="menu-item"><a
                                         href="http://www.woshipm.com/category/pd">产品设计</a></li>
-                                <li id="menu-item-155927" class="menu-item"><a
+                                <li class="menu-item"><a
                                         href="http://www.woshipm.com/category/ucd">交互体验</a></li>
-                                <li id="menu-item-155930" class="menu-item"><a
+                                <li  class="menu-item"><a
                                         href="http://www.woshipm.com/category/operate">产品运营</a></li>
-                                <li id="menu-item-155932"
-                                    class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-155932">
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-155932">
                                     <a href="http://www.woshipm.com/category/rp">原型设计</a></li>
-                                <li id="menu-item-191466"
-                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-191466">
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-191466">
                                     <a href="http://www.woshipm.com/category/evaluating">分析评测</a></li>
-                                <li id="menu-item-155926"
-                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-155926">
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-155926">
                                     <a href="http://www.woshipm.com/category/it">业界动态</a></li>
-                                <li id="menu-item-155936"
+                                <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-155936">
                                     <a href="http://www.woshipm.com/category/zhichang">职场攻略</a></li>
-                                <li id="menu-item-184121"
+                                <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184121">
                                     <a href="http://www.woshipm.com/category/chuangye">创业学院</a></li>
-                                <li id="menu-item-1016325"
+                                <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1016325">
                                     <a href="http://www.woshipm.com/category/marketing">营销推广</a></li>
-                                <li id="menu-item-906383"
+                                <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-906383">
                                     <a href="http://www.woshipm.com/category/ai">人工智能</a></li>
-                                <li id="menu-item-906382"
+                                <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-906382">
                                     <a href="http://www.woshipm.com/category/blockchain">区块链</a></li>
                             </ul>
@@ -149,12 +146,11 @@
 
     <div class="ayi-img-contain">
         <div class="ayi-img-c">
-
             <div class="ayi-main-slider">
                 <div class="bd">
                     <div class="tempWrap" style="overflow:hidden; position:relative; width:574px">
-                        <ul style="width: 1722px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
-                            <li style="float: left; width: 574px;">
+                        <ul id="slider">
+                            <li>
                                 <a href="http://www.woshipm.com/chuangye/1849856.html" target="_blank">
                                     <img src="http://image.woshipm.com/wp-files/2019/01/H8Z944MqDSaU2LFjW5dT.jpg!/both/574x335"
                                          width="574" height="335">
@@ -162,7 +158,7 @@
                                     <div class="title">与快播王欣聊了两小时，他告诉我为什么做社交</div>
                                 </a>
                             </li>
-                            <li style="float: left; width: 574px;">
+                            <li>
                                 <a href="http://www.woshipm.com/it/1840695.html" target="_blank">
                                     <img src="http://image.woshipm.com/wp-files/2019/01/PvZ0ZjoUFpUI9KlOYYOw.jpg!/both/574x335"
                                          width="574" height="335">
@@ -170,7 +166,7 @@
                                     <div class="title">社交中的用户价值、状态评估及算法匹配模型</div>
                                 </a>
                             </li>
-                            <li style="float: left; width: 574px;">
+                            <li>
                                 <a href="http://www.woshipm.com/evaluating/1842857.html" target="_blank">
                                     <img src="http://image.woshipm.com/wp-files/2019/01/iNaSG6uTtrBGrfzrhrtw.jpg!/both/574x335"
                                          width="574" height="335">
@@ -181,6 +177,25 @@
                         </ul>
                     </div>
                 </div>
+                <script type="text/javascript">
+
+                    $(document).ready(function () {
+
+                        $('#slider').bxSlider({
+
+                            slideWidth: 574,
+                            auto: true,
+                            adaptiveHeight: true,
+
+                            startSlides: 0,
+
+                            slideMargin: 10
+
+                        });
+
+                    });
+
+                </script>
                 <div class="supernice">
                     <ul>
                         <li class="on"></li>
@@ -238,11 +253,15 @@
                 <div class="ayi-h-t-c-list">
                     <div class="ayi-h-t-c-item">
                         <div class="post-img">
-                            <a href="http://www.woshipm.com/newretail/1970915.html" target="_blank"><img src="http://image.woshipm.com/wp-files/2019/02/1yedVuh07RH1PAZDOLLv.png!/both/215x140"></a>
-                            <div class="post-cat"><a href="http://www.woshipm.com/category/newretail" rel="category tag">新零售</a></div>
+                            <a href="http://www.woshipm.com/newretail/1970915.html" target="_blank"><img
+                                    src="http://image.woshipm.com/wp-files/2019/02/1yedVuh07RH1PAZDOLLv.png!/both/215x140"></a>
+                            <div class="post-cat"><a href="http://www.woshipm.com/category/newretail"
+                                                     rel="category tag">新零售</a></div>
                         </div>
                         <div class="content">
-                            <h2 class="post-title"><a title="新零售知识体系：一致性原理" href="http://www.woshipm.com/newretail/1970915.html" target="_blank">新零售知识体系：一致性原理</a></h2>
+                            <h2 class="post-title"><a title="新零售知识体系：一致性原理"
+                                                      href="http://www.woshipm.com/newretail/1970915.html"
+                                                      target="_blank">新零售知识体系：一致性原理</a></h2>
                             <p class="des">所谓一致性原理，指的是在进行线上线下结合的新零售的实践过程中，必须使企业的形象、产品和服务具备高度的一致性。
 
                                 01
