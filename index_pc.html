@@ -291,6 +291,15 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript">
+    $(function () {
+        $(".ayi-homeTab span").each(function (index) {
+            $(this).click(function () {
+                $(".ayi-homeTab span").removeClass("is-active");
+                $(".ayi-homeTab span").eq(index).addClass("is-active");
+            });
+        });
+    });
+</script>
 </body>
 </html>
