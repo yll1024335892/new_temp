@@ -56,11 +56,9 @@
                                     <a href="http://www.woshipm.com/category/blockchain">区块链</a></li>
                             </ul>
                         </li>
-                        <li id="menu-item-155940"
-                            class="vip menu-item menu-item-type-custom menu-item-object-custom menu-item-155940"><a
+                        <li class="menu-item"><a
                                 href="http://www.woshipm.com/course">学习提升</a></li>
-                        <li id="menu-item-420537"
-                            class="niubi menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-420537">
+                        <li class="menu-item">
                             <a href="/categroy/active">活动讲座</a><span class="fa fa-angle-down"></span>
                             <ul class="sub-menu">
                                 <li id="menu-item-158482"
@@ -81,17 +79,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li id="menu-item-279085"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279085"><a
+                        <li class="menu-item"><a
                                 target="_blank" href="http://wen.woshipm.com/">问答</a></li>
-                        <li id="menu-item-395532"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-395532"><a
+                        <li class="menu-item"><a
                                 target="_blank" href="http://996.pm/7b1Zr">年费会员</a></li>
-                        <li id="menu-item-155941"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155941"><a
+                        <li class="menu-item"><a
                                 target="_blank" href="http://www.zhaopins.com/">招聘</a></li>
-                        <li id="menu-item-500728"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-500728">
+                        <li class="menu-item">
                             <a href="#">百宝箱</a><span class="fa fa-angle-down"></span>
                             <ul class="sub-menu">
                                 <li id="menu-item-395530"
@@ -298,6 +292,15 @@
                 $(".ayi-homeTab span").removeClass("is-active");
                 $(".ayi-homeTab span").eq(index).addClass("is-active");
             });
+        });
+
+        $(".ayi-subnav-ul li.menu-item").each(function (index) {
+            $(this).hover(function () {
+                $(".ayi-subnav-ul li .sub-menu").css("display","none");
+                $(".ayi-subnav-ul li.menu-item").eq(index).find(".sub-menu").css("display","block");
+            },function () {
+                $(".ayi-subnav-ul li .sub-menu").css("display","none");
+            })
         });
     });
 </script>
